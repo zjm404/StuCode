@@ -7,10 +7,19 @@ import java.util.concurrent.locks.ReentrantLock;
  */
 public class ReentrantLockTest {
     private final ReentrantLock lock = new ReentrantLock();
-    public void method(){
+    public void method1(){
         lock.lock();
         try{
             //...执行任务
+            System.out.println("hello world");
+        }finally {
+            lock.unlock();
+        }
+    }
+    public void method2(){
+        lock.lock();
+        try{
+            method1();
         }finally {
             lock.unlock();
         }
