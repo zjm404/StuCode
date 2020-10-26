@@ -30,6 +30,8 @@
         <module>thread</module>
         <module>mybatis</module>
         <module>spring</module>
+        <module>java</module>
+        <module>jvm</module>
     </modules>
     <dependencies>
 

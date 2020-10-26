@@ -1,14 +1,13 @@
 package cn.zjm404.stu.thread.cooperation.wait.pool;
 
+import java.util.concurrent.Executors;
+import java.util.concurrent.ThreadPoolExecutor;
+
 public class Client {
-    public static void main(String[] args) throws InterruptedException {
-//        try {
-//
-//            ZhengXinChickenChopShop.sellChickenChop();
-//        } catch (InterruptedException e) {
-//            e.printStackTrace();
-//        }
-        ZhengXinChickenChopShop.sellChickenChop1();
-        Thread.sleep(100);
+    public static void main(String[] args){
+        ThreadPoolExecutor poolExecutor = (ThreadPoolExecutor) Executors.newFixedThreadPool(3);
+        ZhengXinChickenChopShop shop = new ZhengXinChickenChopShop(poolExecutor);
+        shop.sellChickenChop2();
+        poolExecutor.shutdown();
     }
 }

@@ -1,5 +1,6 @@
-package cn.zjm404.stu.demo.ediary;
+package cn.zjm404.stu.demo;
 
+import cn.zjm404.stu.demo.ediary.TextToEDiary;
 import org.junit.Test;
 
 public class TextToEDiaryTest {
