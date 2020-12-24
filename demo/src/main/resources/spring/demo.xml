@@ -2,10 +2,10 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean id="KGMusicProvider" class="cn.zjm404.stu.demo.di.bean.KGMusicProvider"/>
-    <bean id="WYYMusicProvider" class="cn.zjm404.stu.demo.di.bean.WYYMusicProvider"/>
-    <bean id="TTPODMusicProvider" class="cn.zjm404.stu.demo.di.bean.TTPODMusicProvider"/>
-    <bean id="MusicProviderFacade"  class="cn.zjm404.stu.demo.di.bean.MusicProviderFacade"
+    <bean id="KGMusicProvider" class="github.zjm404.stu.demo.di.bean.KGMusicProvider"/>
+    <bean id="WYYMusicProvider" class="github.zjm404.stu.demo.di.bean.WYYMusicProvider"/>
+    <bean id="TTPODMusicProvider" class="github.zjm404.stu.demo.di.bean.TTPODMusicProvider"/>
+    <bean id="MusicProviderFacade"  class="github.zjm404.stu.demo.di.bean.MusicProviderFacade"
           lazy-init="true" scope="singleton">
         <property name="musicProvidersList">
             <list>
